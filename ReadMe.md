@@ -67,8 +67,8 @@ https://mint.meghamgarg.com/metrics/treasury
 
 ### Prerequisites
 
-- Node.js (v18.18.0 or newer)
-- Yarn or npm
+- Node.js (v22.11.0 or newer)
+- Yarn
 
 ### Installation
 
@@ -167,15 +167,6 @@ The animation is powered by react-spring to create smooth, spring-based transiti
 - Animation completes within 1.5 seconds
 - Both metrics animate simultaneously
 
-## ♿ Accessibility
-
-The component is built with accessibility in mind:
-
-- `aria-live="polite"` for announcing changes
-- `aria-atomic="true"` to ensure the whole value is read
-- Proper color contrast
-- Semantic HTML structure
-
 ## 🛡️ Error Handling
 
 The implementation includes robust error handling:
@@ -202,12 +193,3 @@ The implementation includes robust error handling:
 - Add localization for international number formats
 - Create animated transitions between data updates
 - Integrate with wallet connection for personalized metrics
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgements
-
-- Thanks to the Mint team for the opportunity to build this component
-- Special thanks to the open source community for the amazing tools that made this possible
