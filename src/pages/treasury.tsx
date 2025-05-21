@@ -9,7 +9,7 @@ const geistSans = Geist({
 
 /**
  * Treasury Page Component
- * 
+ *
  * Displays the TreasuryCounter component wrapped in an ErrorBoundary
  */
 export default function Treasury() {
@@ -21,7 +21,9 @@ export default function Treasury() {
     >
       <main className="flex flex-col items-center justify-center">
         <div className="w-full max-w-3xl mx-auto px-6 md:px-12">
-          <h1 className="text-3xl font-bold text-white mb-8 text-center">Treasury Metrics</h1>
+          <h1 className="text-3xl font-bold text-white mb-8 text-center">
+            Treasury Metrics
+          </h1>
           <ErrorBoundary
             fallback={
               <div className="text-white text-center p-4 bg-red-900/30 rounded-lg">

@@ -5,8 +5,8 @@
   align-items: center;
   gap: 1rem;
   padding: 2rem;
-  background-color: #0D0F23;
-  color: #FFFFFF;
+  background-color: #0d0f23;
+  color: #ffffff;
   border-radius: 0.5rem;
   width: 100%;
   max-width: 400px;
@@ -21,27 +21,27 @@
 }
 
 .label {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
 .value {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
 }
 
 .tvlValue {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .apyValue {
-  color: #00C374;
+  color: #00c374;
 }
 
 /* Responsive layout */

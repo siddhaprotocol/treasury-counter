@@ -11,7 +11,7 @@ export interface TreasuryMetrics {
 /**
  * API response status
  */
-export type ApiStatus = 'idle' | 'loading' | 'success' | 'error';
+export type ApiStatus = "idle" | "loading" | "success" | "error";
 
 /**
  * API error interface

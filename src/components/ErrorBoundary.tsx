@@ -1,4 +1,4 @@
-import React, { Component, ErrorInfo, ReactNode } from 'react';
+import React, { Component, ErrorInfo, ReactNode } from "react";
 
 interface Props {
   fallback?: ReactNode;
@@ -26,8 +26,8 @@ class ErrorBoundary extends Component<Props, State> {
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo): void {
     // Log the error to an error reporting service
-    console.error('Error caught by ErrorBoundary:', error, errorInfo);
-    
+    console.error("Error caught by ErrorBoundary:", error, errorInfo);
+
     // Call the onError prop if provided
     if (this.props.onError) {
       this.props.onError(error, errorInfo);
@@ -37,11 +37,21 @@ class ErrorBoundary extends Component<Props, State> {
   render(): ReactNode {
     if (this.state.hasError) {
       // Render fallback UI if provided, otherwise a default error message
-      return this.props.fallback || (
-        <div style={{ padding: '20px', color: '#721c24', backgroundColor: '#f8d7da', border: '1px solid #f5c6cb', borderRadius: '4px' }}>
-          <h2>Something went wrong.</h2>
-          <p>{this.state.error?.message || 'An unexpected error occurred'}</p>
-        </div>
+      return (
+        this.props.fallback || (
+          <div
+            style={{
+              padding: "20px",
+              color: "#721c24",
+              backgroundColor: "#f8d7da",
+              border: "1px solid #f5c6cb",
+              borderRadius: "4px",
+            }}
+          >
+            <h2>Something went wrong.</h2>
+            <p>{this.state.error?.message || "An unexpected error occurred"}</p>
+          </div>
+        )
       );
     }
 
