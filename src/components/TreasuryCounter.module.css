@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #0D0F23;
+  color: #FFFFFF;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.label {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 0.5rem;
+}
+
+.value {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.tvlValue {
+  color: #FFFFFF;
+}
+
+.apyValue {
+  color: #00C374;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 1.5rem;
+  }
+}
