@@ -1,0 +1,70 @@
+/* ─────────────────────────────────────────
+   TreasuryCounter “card”
+   ───────────────────────────────────────── */
+
+.container {
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;               /* design-system spacing */
+  padding: 32px;           /* 32 = comfortable touch target */
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* ─────────────────────────────────────────
+   Metric block
+   ───────────────────────────────────────── */
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* label = helper text */
+.label {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;        /* Body-S */
+  line-height: 20px;
+  font-weight: 500;
+  color: #a3a6c7;         /* text-secondary */
+  margin-bottom: 4px;     /* 4-px step */
+  text-transform: uppercase;
+  letter-spacing: 0.02em; /* subtle micro-label style */
+}
+
+/* value = headline */
+.value {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;        /* Heading-M */
+  line-height: 32px;
+  font-weight: 600;
+}
+
+/* specific value colours */
+.tvlValue {
+  color: #ffffff;         /* text-primary */
+}
+
+.apyValue {
+  color: #00c374;         /* accent-primary */
+}
+
+/* ─────────────────────────────────────────
+   Responsiveness
+   ───────────────────────────────────────── */
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
+    padding: 48px;        /* 48-px step on desktop */
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 24px;        /* 24-px step on narrow phones */
+  }
+}
